@@ -81,13 +81,34 @@ input.sea-input {
 
 /*-----------------current-----------------------*/
 
+li#current a {
+    background-image:  linear-gradient(to left, rgb(7, 166, 214), yellow);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    }
+
+li#current a i {
+    color: #0b0b0bfa;
+}
 #current span{
-    color: #e8491d;
+    color: #0b0b0bfa;
     font-weight: bold;
 }
 
-#current:hover span {
-    color: white;
+#current:hover a {
+    background-image: linear-gradient(to right, rgba(228, 5, 5, 0.836), rgba(153, 13, 106, 0.836) );
+    color: #ffff;
+    border-radius: 4px;
+    transition: .3s;
+    box-shadow: 2px 2px 5px black;
+
+}
+#current:hover a i{
+   color: #ffff;
+}
+
+#current:hover a span{
+    color: #ffff;
 }
 
 /*-------------------O3 coderz Logo---------------------*/
