@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+body {
+    background: #E2E8F0;
+}
+/*------------------menu bar-------------------------*/
+.menu-bar {
+    grid-column: 1 / span 2;
+    /*grid-row: 1;*/
+    width: 84%;
+    position: fixed;
+    top: 0;
+    left: 240px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgb(170, 168, 168);
+}
+
+.menu-items{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 330px 25px 25px;
+    float: right;
+    align-items: center;
+    width: 400px;
+    padding-left: 10px;
+    margin-right: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: grey;
+    margin-top: 7px;
+}
+
+/*------------------search icon----class:sea-input-------------*/
+ 
+i.sea-input.fas.fa-search {
+    font-size: 16px;
+    color: grey;
+}
+ 
+ 
+/*---------------menu-bar input class: sea-input----------------*/
+ 
+input.sea-input {
+    font-size: 16px;
+    padding: 1px;
+    outline: none;
+    border: none;
+}
+
+/*-------------------------menu-bar menu-items a------------------*/
+
+.search-input {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 280px 20px;
+    box-shadow: 2px 2px 2px #e2e1e1;
+    border-radius: 10px;
+    padding: 6px 10px;
+    align-items: center;
+    text-decoration: none;
+}
+/*----------------------sidde-bar--------------------*/
+
+.sidde-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgb(170, 168, 168);
+}
+
+/*-----------------current-----------------------*/
+
+#current span{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+#current:hover span {
+    color: white;
+}
+
+/*-------------------O3 coderz Logo---------------------*/
+
+.NU_sphere_logo {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 98px auto;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: center;
+    padding-right: 40px;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+.NU_sphere_logo h1{
+    color: rgb(252, 84, 0);
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.NU_sphere_logo h2 {
+    margin-left: -28px;
+    color: #2b9001;
+    font-family: 'Cairo', sans-serif;
+}
+
+/*-----------------------menu icon------------------------------*/
+
+.NU_sphere_logo a {
+    color: grey;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*---------------------------This is a side bar--------------------*/
+ 
+/*-----------------------unorder-list div--------------------------*/
+.unorder-list {
+    margin-left: 5px;
+    padding: 15px;
+}
+/*-------------------unorder-list ul---------------------*/
+.unorder-list ul {
+    list-style: none;
+
+}
+
+.unorder-list ul li{
+    height: 50px ;
+}
+/*-------------------unorder-list ul li a-----------------*/
+
+.unorder-list ul li a {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    margin: 5px;
+    width: 150px;
+    font-size: 20px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px 15px;
+    letter-spacing: .5px;
+}
+ 
+/*------------------unorder-list ul li a hover----------------*/
+ 
+.unorder-list ul li:hover a {
+    background-image: linear-gradient(to right, rgba(228, 5, 5, 0.836), rgba(153, 13, 106, 0.836) );
+    color: #ffff;
+    border-radius: 4px;
+    transition: .3s;
+    box-shadow: 2px 2px 5px black;
+}
+
+.unorder-list ul li:hover a i{
+    
+    color: #ffff;
+    
+}
+ 
+ 
+/*-------------------------sidebar icon color------------------*/
+ 
+ 
+i.fas.fa-wallet {
+    color: rebeccapurple;
+}
+ 
+i.fas.fa-atlas {
+    color: #1c1515de;
+}
+ 
+i.fas.fa-user {
+    color: coral;
+}
+ 
+i.fas.fa-user-tie {
+    color: darkgoldenrod;
+}
+ 
+i.fas.fa-box {
+    color: #32c928c4;
+}
+ 
+i.fas.fa-lightbulb {
+    color: #f40c0cd4;
+}
+ 
+i.fas.fa-hands-helping {
+    color: indianred;
+}
+ 
+.unorder-list ul li a .icon:hover {
+    color: white;
+}
+
+/*----------tooltip----------*/
+.unorder-list ul li .tooltip{
+    display: block;
+    opacity: 0;
+}
+
+.wrapper {
+    margin: 100px 100px 50px 300px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 400px auto;
+}
+
+
+/*-----------------profile_image-----------------*/
+.profile_image {
+    align-items: center;
+    text-align: center;
+    box-shadow: .5px .5px 10px gray;
+    padding: 50px 50px 30px 50px;
+    background: white;
+    border-radius: 5px;
+}
+
+.profile_image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.profile_image h1 {
+    color: rgb(70, 63, 63);
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile_image p {
+    color: rgb(85, 83, 83);
+    font-weight: 400;
+    font-size: 18px;
+}
+.smsFollow ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.smsFollow ul li {
+    display: inline-block;
+    border: 1px solid #007BFF;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.smsFollow ul li:hover{
+    color: white;
+    background: #007BFF;
+    transition: .3s;
+}
+
+/*--------------details---------------------*/
+.ditails {
+    margin: 0 10px;
+    padding: 10px 40px 0 40px;
+    background: white;
+    color: rgb(100, 94, 94);
+    text-align: center;
+    align-items: center;
+    box-shadow: .5px .5px 10px gray;
+    border-radius: 5px;
+}
+
+.ditails h1 {
+    display: inline-block;
+    border-bottom: 4px solid #007BFF;
+    margin-bottom: 20px;
+}
+.ditails address ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 250px auto;
+    padding: 10px;
+    
+   
+}
+
+.ditails address ul li {
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    
+}
+
+.ditails ul li strong {
+    color: rgb(107, 107, 107);
+}
+hr {
+    border: .1px solid rgb(228, 225, 225);
+}
+
+/*--------------------follow-------------------------*/
+
+.follow {
+    background: white;
+    
+    padding: 10px ;
+    text-align: center;
+    color: rgb(100, 94, 94);
+    align-items: center;
+    box-shadow: .5px .5px 10px gray;
+    border-radius: 5px;
+}
+
+.follow h1 {
+    border-bottom: 4px solid #007BFF;
+    display: inline-block;
+   
+    margin-bottom: 30px;
+
+}
+
+.follow ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 155px auto;
+    padding: 10px;
+}
+.follow ul li {
+    padding: 0 10px;
+    text-align: right;
+    font-size: 18px;
+} 
+
+.follow ul li a {
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+   
+}
+
+.follow ul li a i {
+    padding: 0 10px 0 0;
+    font-size: 22px;
+}
+.follow ul li:hover a {
+    color: #007BFF;
+    transition: .3s;
+}
+.follow ul li:hover a i {
+    color: #13ccda;
+    transition: .3s;
+}
+
+.fa-twitter {
+    color: #0093D6;
+}
+
+.fa-facebook {
+    color: #0D8AF0;
+}
+
+.fa-instagram {
+    color: #8a3ab9;
+}
+
+.fa-linkedin {
+    color: #049ff8;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-globe {
+    color:rgb(82, 78, 78)
+}
+
+.fa-github {
+    color: rgb(70, 63, 63);
+}
+
+/*---------------------skills-----------------*/
+
+.skills {
+    background: white;
+    box-shadow: .5px .5px 10px gray;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.skills h1#mySkill {
+    display: inline-block;
+    text-align: center;
+    border-bottom: 4px solid #049ff8;
+    color: rgb(70, 63, 63);
+    margin: 10px;
+   
+}
+
+.skills ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.skills ul li {
+    padding: 10px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    text-align: left;
+    /*-----------------*/
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills ul li:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 10px;
+   
+    width: 95%;
+    height: 15px;
+  
+    background: #013d7cb0;
+    border-radius: 1000px;
+}
+
+.skills ul li:after {
+    content: "";
+    position: absolute;
+    top: 42.5px;
+    left: 12px;
+   
+    width: 0;
+    height: 10px;
+    background:linear-gradient(to left,  rgb(255, 102, 0), #f72056 ) ;
+    
+    border-radius: 1000px;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.skills ul li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 85%;
+        background: linear-gradient(to left,  #f802bb, #fc0341 ) ;
+    }
+}
+
+.skills ul li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 80%;
+        background: linear-gradient(to left,  #f802bb, #fc0341 ) ;
+    }
+}
+
+.skills ul li.js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 60%;
+        background: linear-gradient(to left,  #f802bb, #fc0341 ) ;
+    }
+}
+
+
+.skills ul li.bootstrap:after {
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+    to {
+        width: 30%;
+        background: linear-gradient(to left,  #f802bb, #fc0341 ) ;
+    }
+}
+
+.skills ul li.jQuery:after {
+    animation-name: jQuery;
+}
+
+@keyframes jQuery {
+    to {
+        width: 25%;
+        background: linear-gradient(to left,  #f802bb, #fc0341 ) ;
+    }
+}
+
+
+.skills ul li.php:after {
+    animation-name: php;
+}
+
+@keyframes php {
+    to {
+        width: 50%;
+        background: linear-gradient(to left,  #f802bb, #fc0341 ) ;
+    }
+}
+
+.skills ul li.spoken:after {
+    animation-name: spoken;
+}
+
+@keyframes spoken {
+    to {
+        width: 60%;
+        background: linear-gradient(to left,  #f802bb, #fc0341 ) ;
+    }
+}
+
+abbr {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+   
+    font-size: 14px;
+    line-height: 35px;
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    background: linear-gradient(to left,  #da03a4, #e2023a ) ;
+    box-shadow: 0 5px 20px #f802bb, 0 5px 20px #fc0341;
+    animation: count 4s ease;
+}
+@keyframes count {
+    from {
+        left: 0%;
+    }
+
+}
+.skills ul li.html abbr {
+    left: 85%
+}
+.skills ul li.css abbr {
+    left: 80%;
+}
+
+.skills ul li.js abbr {
+    left: 60%;
+}
+
+.skills ul li.bootstrap abbr {
+    left: 30%;
+}
+
+.skills ul li.jQuery abbr {
+    left: 25%;
+}
+
+.skills ul li.php abbr {
+    left: 50%;
+}
+
+.skills ul li.spoken abbr {
+    left: 60%;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .menu-bar {
+        width: 94%;
+        left: 40px;
+    }
+
+    .NU_sphere_logo {
+        display: grid;
+        grid-template-columns: auto 40px;
+        grid-gap: 30px;
+    
+    }
+    
+    .sidde-bar {
+        position: fixed;
+        top: 0;
+        width: 78px;
+        margin: 0;
+        height: 100%;
+    }
+
+    .NU_sphere_logo h2 {
+        display: none;
+    }
+   
+    .unorder-list {
+        
+        margin: 60px 0 0 0;
+        padding: 0 10px;
+    }
+   
+
+    .NU_sphere_logo h1 {
+        text-align: center;
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        left: 18px;   
+    }
+
+    .NU_sphere_logo a {
+        display: none;
+    }
+
+    .unorder-list ul {
+        margin-top: 100px;
+    }
+    .unorder-list ul li{
+        text-align: center;
+        width: 40px;
+        margin: 3px;
+
+    } 
+
+    .unorder-list ul li a {
+        width: 30px;
+        margin: 0;
+        padding: 6px;
+        text-align: center;
+    }
+    .unorder-list ul li a span { 
+       display: none;
+    }
+    .unorder-list ul li a i{
+        opacity: 1;
+        font-size: 25px;
+    }
+
+    .unorder-list ul li {
+        position: relative;
+    }
+    .tooltip {
+        position: absolute;
+        top: 0;
+        left: 122px;
+        transform: translate(-50%, -50%);
+        background: #02e8f0;
+        color: black;
+        font-weight: bold;
+        box-shadow: 2px 5px  10px gray;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 6px;
+        width: 122px;
+        height: 35px;
+        display: block;
+        transition: 0s;
+        pointer-events: none;
+        opacity: 0;
+    }
+    
+    .unorder-list ul li:hover .tooltip{
+        transition: all .5s ease;
+        opacity: 1;
+        top: 50%;
+    
+    }
+    /*----------------------My Profile wrapper-----------------------*/
+    .wrapper {
+        display: block;
+        margin: 80px 20px 10px 90px;
+    }
+
+    .profile_image {
+        
+        display: block;
+        margin: 30px;
+    }
+
+    .ditails {
+        display: block;
+        
+        margin: 30px;
+    }
+
+    .follow {
+        display: block;
+        
+        margin: 30px;
+    }
+    
+
+    .skills {
+        display: block;
+        
+        margin: 30px;
+    }
+}
