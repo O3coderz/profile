@@ -148,6 +148,7 @@ input.sea-input {
     align-items: center;
     margin: 5px;
     width: 150px;
+    text-transform: capitalize;
     font-size: 20px;
     color: gray;
     text-decoration: none;
